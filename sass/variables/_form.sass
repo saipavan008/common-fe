@@ -1,0 +1,79 @@
+.form-group
+  position: relative
+  margin-bottom: $space3
+  &:last-child
+    margin-bottom: 0
+
+
+  input[type="radio"]:not(:checked) + label:before,
+  input[type="radio"]:checked + label:before
+    content: ""
+    position: absolute
+    width: 19px
+    height: 19px
+    left: 0px
+    top: 6.5px
+    border: 1.5px solid $border-color-600
+    border-radius: 100%
+    background: #fff
+    cursor: pointer
+
+  input[type="radio"]:checked + label:after
+    content: ""
+    position: absolute
+    width: 11px
+    height: 11px
+    padding: 2px
+    background: $teal-green
+    top: 10px
+    left: 4px
+    border-radius: 100%
+  //background: #fff
+  input[type="radio"]:checked + label:before
+    border: 2px solid $teal-green
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+textarea
+  &.form-control
+    height: 80px
+    resize: none
+    padding: 6px 12px
+.form-control
+  height: 44px
+.form-control, .css-1uwyw1l-control,.css-13cymwt-control
+  font-size: $font-6
+  border-radius: 8px
+  min-height: 44px
+  font-weight: 500
+  font-family: FontMedium
+  border-color: $border-color !important
+  box-shadow: none !important
+  outline: none !important
+
+.css-13cymwt-control
+  border-radius: 8px !important
+  min-height: 44px !important
+.css-1u9des2-indicatorSeparator
+  display: none
+.css-t3ipsp-control
+  min-height: 44px !important
+  //max-height: 44px !important
+  border-radius: 8px !important
+  box-shadow: none!important
+  font-size: 16px
+  font-weight: 500
+  font-family: FontMedium
+  &:hover
+    border-width: 1px !important
+
+.form-control::-webkit-input-placeholder
+  color: $placeholder-color
+
+.profile-image
+  height: 100px
+  width: 100px
+  border-radius: 100px

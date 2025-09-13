@@ -1,0 +1,262 @@
+.btn
+  border-radius: 30px
+  height: 44px
+  color: $black
+  text-align: center
+  font-size: $font-6
+  font-family: FontBold
+  line-height: normal
+  padding: $space2 $space4
+  display: inline-block
+  text-transform: capitalize
+  outline: none !important
+  box-shadow: none !important
+  &.disabled
+    --bs-btn-disabled-color: $black !important
+    --bs-btn-disabled-bg: #D6D5D5 !important
+    border-color: #D6D5D5 !important
+
+.btn:disabled, .btn.disabled, fieldset:disabled .btn
+  --bs-btn-disabled-color: $black !important
+  --bs-btn-disabled-bg: #D6D5D5 !important
+  border-color: #D6D5D5 !important
+
+.btn-icon
+  height: 44px
+  width: 44px
+  border-radius: 44px
+  padding: 0px
+  svg
+    width: 24px
+    height: 24px
+  &.btn-sm
+    height: 34px
+    width: 34px
+    padding: 0px
+
+.btn-sm
+  font-size: $font-7
+  height: 34px
+  border-radius: 22px
+  padding: $space1 $space3
+
+.btn-primary
+  border: 2px solid $primary-color
+  background: $primary-color
+  text-transform: capitalize !important
+  --bs-btn-active-color: $black
+  --bs-btn-active-bg: transparent
+  --bs-btn-active-border-color: #F7C20F
+  svg
+    width: 16px
+    position: relative
+  &:hover
+    color: #ffffff
+    background: darken($primary-color, 10%)
+    //background: $primary-color
+    border: 2px solid darken($primary-color, 10%)
+
+.btn-success
+  border: 2px solid $green-500
+  background: $green-500
+  text-transform: capitalize !important
+  --bs-btn-active-color: $black
+  --bs-btn-active-bg: transparent
+  --bs-btn-active-border-color: $green-500
+  svg
+    width: 16px
+    position: relative
+  &:hover
+    color: #ffffff
+    background: darken($green-500, 10%)
+    //background: $primary-color
+    border: 2px solid darken($green-500, 10%)
+
+
+
+.btn-outline-primary
+  color: $primary-color
+  border: 1px solid $primary-color
+  --bs-btn-active-color: #ffffff
+  --bs-btn-active-bg: #F7C20F
+  //--bs-btn-active-bg: $primary-color
+  --bs-btn-active-border-color: #F7C20F
+  &:hover
+    background: $primary-color
+    color: #ffffff
+    border: 1px solid $primary-color
+
+.btn-outline-success
+  color: $green-500
+  border: 1px solid $green-500
+  //--bs-btn-active-color: $green-500
+  //--bs-btn-active-bg: $green-500
+  //--bs-btn-active-border-color: $green-500
+  &:hover
+    background: $green-500
+    color: #ffffff
+    border: 1px solid $green-500
+
+.btn-outline-blue
+  color: $blue
+  border: 1px solid $blue
+  --bs-btn-active-color: #ffffff
+  --bs-btn-active-bg: #0D6EFD
+  //--bs-btn-active-border-color: $blue
+  &:hover
+    background: $blue
+    color: #ffffff
+    border: 1px solid $blue
+
+.info-button
+  border: 1px solid $border-color
+  font-weight: 500
+  height: 35px
+  padding: 0px 20px
+  cursor: pointer
+  border-radius: 50px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  &.info-circle
+    height: 40px
+    width: 40px
+    border-radius: 40px
+    padding: 0px
+  &.selected
+    border: 1px solid $green-500
+    font-weight: 600
+
+.tabs-button
+  .btn-tabs
+    position: relative
+    border: 0
+    background: transparent
+    padding: 0
+    font-size: 15px
+    height: auto
+    color: #ffffff
+    margin-right: $space3
+    &:last-child
+      margin-right: 0
+  .primary-active
+    color: $primary-color
+    font-weight: 600
+    &:after
+      content: ''
+      width: 100%
+      height: 2px
+      left: 0
+      bottom: -8px
+      position: absolute
+      background: $primary-color
+  .teal-green-active
+    color: $teal-green
+    font-weight: 600
+    &:after
+      content: ''
+      width: 100%
+      height: 3px
+      left: 0
+      bottom: -10px
+      position: absolute
+      background: $teal-green
+  .full-border-tab
+    position: relative
+    background: transparent
+    padding: 0
+    height: auto
+    width: 100%
+    border: 0
+    .teal-green-active
+      color: $teal-green
+      font-weight: 600
+      &:after
+        content: ''
+        width: 100%
+        height: 3px
+        left: 0
+        bottom: -10px
+        position: absolute
+        background: $teal-green
+
+
+.cart-button-sec
+  position: relative
+  .cart-count-sec
+    height: 15px
+    width: 15px
+    background: $primary-color
+    border-radius: 50%
+    position: absolute
+    top: -2px
+    right: -7px
+    color: $white
+    @include d-flex
+    .count-text
+      font-size: 10px
+
+@keyframes button-active-left-right
+  0%
+    background-position: 100% 0
+  100%
+    background-position: 0 0
+
+@keyframes button-active-right-left
+  0%
+    background-position: 0% 0
+  100%
+    background-position: 100% 0
+
+.product-card-action-button
+  width: 45px
+  background: transparent
+  border-radius: $space1
+  overflow: hidden
+  position: relative
+  transition: .7s ease-in-out
+  height: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0
+  &.left-right
+    border: 1px solid $primary-color
+    svg
+      height: 22px
+      width: 22px
+      path
+        stroke-width: 2px
+    &.active
+      background: linear-gradient(to right, rgba($primary-color, .3) 50%, transparent 50%)
+      background-size: 200% 100%
+      background-position: 100% 0
+      color: $primary-color
+      animation: button-active-left-right 1.4s forwards
+    &:hover
+      &:not(.active)
+        background: rgba(#ff9900 , .1)
+        color: $primary-color !important
+
+
+  &.right-left
+    border: 1px solid $red-color
+    svg
+      height: 18px
+      width: 18px
+    &.active
+      background: linear-gradient(to right, rgba($red-color, .3) 50%, transparent 50%)
+      background-size: 200% 100%
+      background-position: 0% 0
+      color: $red-color
+      animation: button-active-right-left 1.4s forwards
+    &:hover
+      &:not(.active)
+        background: rgba($red-color , .1)
+        color: $red-color !important
+
+
+
+
