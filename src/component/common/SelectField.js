@@ -12,12 +12,13 @@ function SelectField({
                          handleChange = (e) => e,
                          isMulti=false,
                          options=[],
-                         message={}
+                         message={},
+                         showAsterisk = false
                      }) {
     return (
         <React.Fragment>
             <div className={`form-group mb-3 ${formGroupClassName ? formGroupClassName : ''}`}>
-                <label>{label}</label>
+                <label>{label}{showAsterisk && <span className="asterisk">*</span>}</label>
                 <Select
                     options={options}
                     value={value}

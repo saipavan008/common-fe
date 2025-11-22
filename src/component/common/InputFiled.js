@@ -10,12 +10,13 @@ function InputFiled({
                         value= '',
                         fieldClassName='' ,
                         handleChange = (e) => e,
-                        message={}
+                        message={},
+                        showAsterisk = false
                     }) {
     return (
         <React.Fragment>
             <div className={`form-group mb-3 ${formGroupClassName ? formGroupClassName : ''}`}>
-                <label>{label}</label>
+                <label>{label}{showAsterisk && <span className="asterisk">*</span>}</label>
                 <input
                     type={type}
                     name={name}

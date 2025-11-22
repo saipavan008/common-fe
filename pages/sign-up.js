@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {deepClone, imageToBase} from "../src/component/helpers";
 import API from "../src/component/api/Auth";
+import {useRouter} from "next/router";
 
 const api = new API();
 
@@ -13,6 +14,7 @@ function SignUp(props) {
         profile: ''
     });
     const [errorMessage, setErrorMessage] = useState({});
+    const router = useRouter();
 
     const handleChange = (e) => {
         setErrorMessage({});
@@ -37,8 +39,10 @@ function SignUp(props) {
         }
         setErrorMessage({});
         api.register(data).then(res => {
-            console.log(res);
             setErrorMessage({error: true, type: "text-success", text: res.data.message})
+            setTimeout(() => {
+                router.push('/')
+            }, 1000)
         }).catch(e => {
             setErrorMessage({error: true, type: "text-danger", text: e.response.data.message})
         })

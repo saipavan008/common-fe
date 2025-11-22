@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import Cookies from "universal-cookie";
 import {setCart, setUserDetails, updateCart} from "@/redux/actions/stateActions";
 import Buttons from "@/component/common/Buttons";
-import {ProfileCircle, ShoppingCart} from "iconsax-react";
+import {Bank, ProfileCircle, ShoppingCart} from "iconsax-react";
 import CommonDropdown from "@/component/common/CommonDropdown";
 import API from "@/component/api/Auth";
 
@@ -72,6 +72,16 @@ function Header() {
                         {
                             !!userData?.user ?
                                 <>
+                                    <div className="col-auto">
+                                        <Buttons
+                                            type={'btn-blank'}
+                                            size={'btn-sm'}
+                                            onClick={() => {router.push('/my-cashbooks')}}
+                                            icon={<Bank className={'text-white'}/>}
+                                            iconOnly={true}
+                                            className={'border-0 p-0'}
+                                        />
+                                    </div>
                                     <div className="col-auto">
                                         {/*<button className="btn btn-primary" onClick={() => handleLogout()}>Logout</button>*/}
                                         <div className="cart-button-sec">

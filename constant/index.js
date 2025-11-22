@@ -20,3 +20,19 @@ export const images = {
     homeFruits: require('../public/assets/images/fruits.png'),
     banner1: require('../public/assets/images/banner-1.png')
 };
+
+export const bankBookInitialFormData = {
+    book_title: '',
+    description: '',
+    balance_type: '',
+    payment_type: ''
+};
+
+export const transactionsFormData = {
+    amount: null,
+    remark: '',
+    payment_mode: 'Online',
+    category: '',
+    created_at: null,
+    last_edit: null
+}

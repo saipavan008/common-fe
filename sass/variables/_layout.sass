@@ -1,9 +1,33 @@
 .card
   border-radius: 8px
   background: #ffffff
+  padding: $space3
   box-shadow: 0px 4px 12px 0px #18274B0F
   --bs-card-border-width: 0px
 
 .brand-logo
   //height: 100px
   width: 100px
+
+
+.tag
+  padding: 3px 6px
+  display: inline-flex
+  border-radius: $space1
+  font-size: 10px
+  background: lighten($primary-color , 30%)
+  &.sm
+    padding: 2px 4px
+    font-size: 8px
+
+.separator-start
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    height: 12px
+    width: 1px
+    background: $border-color
+    left: 0
+    top: 50%
+    transform: translateY(-50%)

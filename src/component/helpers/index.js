@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment/moment";
 
 export const deepClone = (data) => {
   return JSON.parse(JSON.stringify(data));
@@ -51,6 +52,7 @@ export const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
         ref={ref}
         onClick={(e) => {
           e.preventDefault();
+          e.stopPropagation();
           onClick(e);
         }}
     >
@@ -58,3 +60,14 @@ export const CustomToggle = React.forwardRef(({children, onClick}, ref) => (
     </a>
 ))
 
+export const getFormatDate = (data) => {
+    return moment(data).format('MMM DD YYYY');
+}
+
+export const getFormatTime = (data) => {
+    return moment(data).format('hh:mm A');
+}
+
+export const getBalanceType = (value) => {
+    return value === 0 ? '' : value >= 0 ? 'text-success' : 'text-danger'
+}

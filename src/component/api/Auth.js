@@ -38,7 +38,7 @@ export default class API {
         return request('Post', '/reset-password', data)
     }
 
-    getAllUsers(data) {
+    getAllUsers() {
         return request('GET' , '/all-users')
     }
 
@@ -73,5 +73,37 @@ export default class API {
     checkout(data){
         return request('POST', '/checkout', data)
     }
+
+    addCashBook(data) {
+        return request('POST', '/add-cashbook', data)
+    }
+
+    getAllCashbooks() {
+        return request('GET', '/all-cashbooks', {})
+    }
+
+    getCashbookSingleDetails(id){
+        return request('GET', `/cashbook-details/${id}`)
+    }
+
+    updateCashbook(data) {
+        return request('POST', '/update-cashbook', data)
+    }
+
+    deleteCashbook(data) {
+        return request('DELETE', '/delete-cashbook', data)
+    }
+
+    updateTransactions(data, id) {
+        return request('POST', `/cashbook-details/${id}`, data)
+    }
+
+    editAndUpdateTransactions(data, id, itemId) {
+        return request('PATCH', `/cashbook-details/${id}?itemId=${itemId}`, data)
+    }
+
+    deleteTransactions(id, itemId) {
+            return request('DELETE', `/cashbook-details/${id}?itemId=${itemId}`)
+        }
 
 };

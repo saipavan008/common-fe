@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {deepClone} from "@/component/helpers";
 import API from "@/component/api/Auth";
+import {useRouter} from "next/router";
 
 const api = new API();
 function ForgotPassword(props) {
@@ -10,6 +11,7 @@ function ForgotPassword(props) {
         password: ''
     });
     const [errorMessage , setErrorMessage] = useState({});
+    const router = useRouter();
 
     const handleChange = (val) => {
         const shallowCopy = deepClone(formData);
@@ -21,8 +23,11 @@ function ForgotPassword(props) {
     const handleForgotPassword = () => {
         api.forgotPassword(formData).then(res => {
             setErrorMessage({error: true, type: "text-success", text: res.data.message})
+            setTimeout(() => {
+                router.push('/login')
+            }, 1000)
         }).catch(e => {
-            setErrorMessage({error: true, type: "text-danger", text: e.response.data.message})
+            setErrorMessage({error: true, type: "text-danger", text: e.data.message})
         })
     };
 

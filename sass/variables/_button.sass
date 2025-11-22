@@ -258,5 +258,29 @@
         color: $red-color !important
 
 
+.more-icon
+  transform: rotate(90deg)
+  height: 20px
+  width: 20px
+  path
+    fill: black
 
 
+
+.add-new-csh-book-button-section
+  height: 100px
+  border: 1px dashed lighten($primary-color , 20%)
+  border-radius: $space2
+  cursor: pointer
+  @include d-flex()
+  transition: all .2s ease-in-out
+  &:hover
+    background: lighten($primary-color , 48%)
+    border-color: $primary-color
+    color: $primary-color
+
+.back-arrow
+  color: $primary-color
+  cursor: pointer
+  &:hover
+    color: darken($primary-color , 20%)
