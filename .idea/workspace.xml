@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73404a9a-2edc-465a-b5e9-f7b47af2b6d6" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/.idea/fe-p.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2tIgBNTDcU5kQKMQmchMAMfsO5L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;beta&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/qw_macbook_air_blr01/Desktop/user/test/fe-p&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/component" />
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/src/wash" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/templates" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73404a9a-2edc-465a-b5e9-f7b47af2b6d6" name="Changes" comment="" />
+      <created>1740044865169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740044865169</updated>
+      <workItem from="1740044866304" duration="45357000" />
+      <workItem from="1740398251486" duration="1771000" />
+      <workItem from="1740482921486" duration="14112000" />
+      <workItem from="1740570857793" duration="31313000" />
+      <workItem from="1740897436815" duration="1467000" />
+      <workItem from="1741857595119" duration="8715000" />
+      <workItem from="1742880531110" duration="596000" />
+      <workItem from="1744288635151" duration="6000" />
+      <workItem from="1744649802317" duration="1616000" />
+      <workItem from="1744738997895" duration="2303000" />
+      <workItem from="1745143458000" duration="765000" />
+      <workItem from="1745425828349" duration="3311000" />
+      <workItem from="1745469670904" duration="7000" />
+      <workItem from="1745662348211" duration="13339000" />
+      <workItem from="1746272227882" duration="10300000" />
+      <workItem from="1752685554843" duration="2211000" />
+      <workItem from="1755270827109" duration="3932000" />
+      <workItem from="1755319753720" duration="17432000" />
+      <workItem from="1755532369282" duration="3449000" />
+      <workItem from="1755881626672" duration="19782000" />
+      <workItem from="1756485589566" duration="13357000" />
+      <workItem from="1756548485285" duration="6694000" />
+      <workItem from="1757759109072" duration="6562000" />
+      <workItem from="1760501437347" duration="174000" />
+      <workItem from="1761712814398" duration="25000" />
+      <workItem from="1762234459363" duration="22000" />
+      <workItem from="1762240469732" duration="561000" />
+      <workItem from="1762274582908" duration="3558000" />
+      <workItem from="1762446149655" duration="4473000" />
+      <workItem from="1762662400519" duration="14655000" />
+      <workItem from="1762702523431" duration="5764000" />
+      <workItem from="1762844252522" duration="12000" />
+      <workItem from="1763139810691" duration="5178000" />
+      <workItem from="1763274341125" duration="7566000" />
+      <workItem from="1763308623321" duration="4989000" />
+      <workItem from="1763791178487" duration="10846000" />
+      <workItem from="1763835293030" duration="2121000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial">
+      <option name="closed" value="true" />
+      <created>1757759599830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757759599830</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <option name="closed" value="true" />
+      <created>1763835620562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763835620562</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+</project>
